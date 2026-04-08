@@ -34,11 +34,11 @@
     </section>
 <div class="product-card slideshow-container">
     <!-- Image 1 (Visible by default) -->
-    <img class="mySlides" src="image1.jpg" style="width:100%; display:block;">
+    <img class="mySlides" src="dress.png" style="width:100%; display:block;">
     <!-- Image 2 (Hidden by default) -->
-    <img class="mySlides" src="image2.jpg" style="width:100%; display:none;">
+    <img class="mySlides" src="dress 2.png" style="width:100%; display:none;">
     <!-- Image 3 (Hidden by default) -->
-    <img class="mySlides" src="image3.jpg" style="width:100%; display:none;">
+    <img class="mySlides" src="dress.png" style="width:100%; display:none;">
     
     <h3>Featured Collection</h3>
     <p>New arrivals every week</p>
@@ -52,7 +52,31 @@
     <footer>
         <p>&copy; 2026 My Online Store</p>
     </footer>
+ <script>
+    let slideIndex = 0;
+    showSlides();
 
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        
+        // Hide all images
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        
+        slideIndex++;
+        
+        // Reset to first image if at the end
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        
+        // Show the current image
+        slides[slideIndex-1].style.display = "block";  
+        
+        // Run again in 3 seconds (3000ms)
+        setTimeout(showSlides, 3000); 
+    }
+</script>
 </body>
 </html>
 
