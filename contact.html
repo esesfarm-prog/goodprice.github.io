@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goodprice | Contact Us</title>
+    <title>Contact Us | Good Price Store</title>
     <style>
-        /* Keeping the same styles as index.html for a consistent look */
         body { font-family: sans-serif; margin: 0; line-height: 1.6; color: #333; }
         header { background: #333; color: #fff; padding: 1rem; text-align: center; }
         nav { display: flex; justify-content: center; background: #444; padding: 0.5rem; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .container { max-width: 800px; margin: auto; padding: 20px; }
-        .section { margin-bottom: 40px; }
-        form { display: flex; flex-direction: column; background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #ddd; }
-        input, textarea { margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-        .btn { background: #28a745; color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        .container { max-width: 600px; margin: auto; padding: 40px 20px; }
+        form { display: flex; flex-direction: column; background: #f9f9f9; padding: 25px; border-radius: 8px; border: 1px solid #ddd; }
+        label { font-weight: bold; margin-bottom: 5px; }
+        input, textarea { margin-bottom: 20px; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+        .btn { background: #28a745; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; font-weight: bold; }
         .btn:hover { background: #218838; }
-        footer { text-align: center; padding: 20px; background: #eee; margin-top: 20px; }
+        footer { text-align: center; padding: 20px; background: #eee; margin-top: 40px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Goodprice</h1>
+        <h1>Good Price Store</h1>
     </header>
 
     <nav>
@@ -31,43 +30,35 @@
     </nav>
 
     <div class="container">
-        <!-- About Us Section -->
-        <section class="section">
-            <h2>About Our Store</h2>
-            <p>GoodPrice has redefined value in the fashion industry by proving that quality doesn't have to be expensive. While competitors prioritize high markups, GoodPrice focuses on premium fabrics and timeless designs that outlast seasonal trends. Their clothing balances durability with affordability, ensuring that every stitch serves a purpose.
-What truly sets them apart is their commitment to versatility; their pieces transition effortlessly from professional settings to casual weekend wear. By streamlining production and cutting unnecessary costs, they deliver high-end aesthetics at a fraction of the price. For the savvy shopper, GoodPrice represents the ultimate intersection of style, comfort, and economy.
-Would you like me to adjust the tone to be more professional or perhaps more high-energy for a social media post?</p>
-        </section>
+        <h2>Contact Us</h2>
+        <p>Send a message and we will get back to you at esesfarm@gmail.com</p>
+        
+        <!-- THE FORM STARTS HERE -->
+        <form action="https://formsubmit.co" method="POST">
+            
+            <!-- Honeypot to stop spam -->
+            <input type="text" name="_honey" style="display:none">
+            
+            <!-- Redirect back to your site after they send the message -->
+            <input type="hidden" name="_next" value="https://github.io">
 
-        <!-- Contact Form Section -->
-        <section class="section">
-            <h2>Get In Touch</h2>
-            <p>Have a question about an order? Send us a message below.</p>
-            <form action=""https://formsubmit.co" method="POST">
-    <!-- This hidden field prevents spam bots -->
-    <input type="text" name="_honey" style="display:none">
-    
-    <!-- This ensures the user stays on your site after sending -->
-    <input type="hidden" name="_next" value="https://github.io">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" required placeholder="Enter your full name">
 
-    <label for="name">Your Name</label>
-    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <label for="email">Your Email Address</label>
+            <input type="email" name="email" id="email" required placeholder="so we can reply to you">
 
-    <label for="email">Email Address</label>
-    <input type="email" name="email" id="email" placeholder="email@example.com" required>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" rows="5" required placeholder="What are you looking to buy?"></textarea>
 
-    <label for="message">Message</label>
-    <textarea name="message" id="message" rows="5" placeholder="How can we help you?" required></textarea>
-
-    <button type="submit" class="btn">Send Message</button>
-</form>
-
-        </section>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </div>
 
     <footer>
-        <p>&copy; 2024 My Online Store</p>
+        <p>&copy; 2026 Good Price Store</p>
     </footer>
 
 </body>
 </html>
+
