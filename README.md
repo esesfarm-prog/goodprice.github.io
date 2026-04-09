@@ -1,1 +1,1 @@
-# goodprice.github.com
+# goodprice.github.io
